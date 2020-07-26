@@ -3,6 +3,7 @@ git add .
 git commit -m %1
 git status
 git push
-exit
+echo "Check Added Data Are Correct"
+
 
 
