@@ -30,8 +30,8 @@ paras = re.findall(r'alt="(.*?)" width="150"></a>',str(respData))
 
 
 for para in paras:
-    print(para)
+    print('Day', paras.index(para),'-', para)
 
-if(input('\nEnter any key to EXIT')):
+if(input('\nPress any key to continue . . .')):
 	exit()
 
