@@ -12,12 +12,12 @@ class RegistrationForm(FlaskForm):
     confirm_password = PasswordField(
         "Confirm Password", validators=[DataRequired(), EqualTo("password")]
     )
-    sumbit = SubmitField("Sign Up")
+    submit = SubmitField("Sign Up")
 
 
 class LoginForm(FlaskForm):
     email = StringField("Email", validators=[DataRequired(), Email()])
     password = PasswordField("Password", validators=[DataRequired()])
-    remenber = BooleanField("Remember Me")
-    sumbit = SubmitField("Sign In")
+    remember = BooleanField("Remember Me")
+    submit = SubmitField("Sign In")
 
